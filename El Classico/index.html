@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Classico | Luxury Nature Lodge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: 'Raleway', sans-serif; }
+        h1, h2, h3, .font-playfair { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
+        .hero-shadow { text-shadow: 2px 4px 10px rgba(0,0,0,0.4); }
+        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-4">
+        <a href="#home" class="text-2xl font-bold text-amber-800 tracking-tight italic">El Classico</a>
+        <nav class="hidden md:flex space-x-8 font-semibold text-gray-700 items-center">
+            <a href="#home" class="hover:text-amber-700 transition">Home</a>
+            <a href="#experience" class="hover:text-amber-700 transition">Experience</a>
+            <a href="#rooms" class="hover:text-amber-700 transition">Rooms</a>
+            <a href="#contact" class="hover:text-amber-700 transition">Location</a>
+            <a href="apply.html" class="bg-amber-800 text-white px-5 py-2 rounded-full hover:bg-amber-700 transition shadow-md">Reserve</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-amber-800 p-2">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-6 bg-white border-t space-y-4 shadow-xl">
+        <a href="#home" class="block py-4 border-b">Home</a>
+        <a href="#experience" class="block py-4 border-b">The Experience</a>
+        <a href="#rooms" class="block py-4 border-b">Rooms</a>
+        <a href="apply.html" class="block py-4 text-amber-800 font-bold">Book a Stay</a>
+    </div>
+</header>
+
+<section id="home" class="relative min-h-screen flex items-center justify-center pt-16">
+    <img src="img/gallery9.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Lodge Background" />
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center px-4 max-w-3xl">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white hero-shadow">Embrace the Serene</h1>
+        <p class="text-lg md:text-2xl mb-8 text-gray-100 hero-shadow font-light italic">Luxury redefined in the heat of Busyness.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#rooms" class="bg-amber-700 text-white px-10 py-4 rounded-full font-semibold hover:bg-amber-600 transition shadow-lg">View Rooms</a>
+            <a href="#experience" class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-semibold hover:bg-white/30 transition">The Story</a>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-24 bg-white px-4">
+    <div class="max-w-7xl mx-auto space-y-24">
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">More Than Just a Stay</h2>
+            <p class="text-gray-500">We curate moments of peace, flavor, and contentment.</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-3/2 rounded-3xl overflow-hidden shadow-2xl">
+                <img src="img/gallery7.jpg" alt="Spa" class="hover:scale-105 transition duration-700">
+            </div>
+            <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold font-playfair italic">Whispering Silence Spa</h3>
+                <p class="text-gray-600 leading-relaxed">Reconnect with yourself in our tranquil moments and mild customer service. Our treatments use local cedar and calm approaches.</p>
+                <div class="grid grid-cols-2 gap-4 text-sm font-bold text-amber-800">
+                    <span>✓ Open 24/7</span>
+                    <span>✓ Organic Oils</span>
+                    <span>✓ Heated Pool</span>
+                    <span>✓ Steam Room</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800" alt="Dining" class="hover:scale-105 transition duration-700">
+            </div>
+            <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold font-playfair italic">Wildfire Kitchen</h3>
+                <p class="text-gray-600 leading-relaxed">Our farm-to-table philosophy means everything on your plate was harvested nearby. Experience open-fire cooking and vintage wine pairings.</p>
+                <p class="italic text-amber-900 bg-amber-50 p-4 rounded-xl">"A culinary journey through the valley." — Gourmet Traveler</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="rooms" class="py-24 bg-stone-50 px-4">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">The Suites</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md group border border-gray-100">
+                <div class="h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2 font-playfair">Deluxe Room</h3>
+                    <p class="text-gray-500 text-sm mb-6">Mountain views and private library corner.</p>
+                    <a href="apply.html?room=Deluxe Room" class="flex items-center justify-between font-bold text-amber-800 group-hover:translate-x-2 transition">Book $120/nt <span>→</span></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md group border border-gray-100">
+                <div class="h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2 font-playfair">Luxury Suite</h3>
+                    <p class="text-gray-500 text-sm mb-6">Panoramic balcony with outdoor cedar tub.</p>
+                    <a href="apply.html?room=Luxury Suite" class="flex items-center justify-between font-bold text-amber-800 group-hover:translate-x-2 transition">Book $200/nt <span>→</span></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md group border border-gray-100">
+                <div class="h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2 font-playfair">Standard Room</h3>
+                    <p class="text-gray-500 text-sm mb-6">Modern minimalism meets rustic charm.</p>
+                    <a href="apply.html?room=Standard Room" class="flex items-center justify-between font-bold text-amber-800 group-hover:translate-x-2 transition">Book $90/nt <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-stone-900 text-white px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+        <div>
+            <span class="block text-4xl mb-2 italic text-amber-500 font-playfair">2 PM</span>
+            <p class="uppercase text-xs tracking-widest opacity-60">Check-In</p>
+        </div>
+        <div>
+            <span class="block text-4xl mb-2 italic text-amber-500 font-playfair">Free</span>
+            <p class="uppercase text-xs tracking-widest opacity-60">Valet Parking</p>
+        </div>
+        <div>
+            <span class="block text-4xl mb-2 italic text-amber-500 font-playfair">Starlink</span>
+            <p class="uppercase text-xs tracking-widest opacity-60">High-Speed Wi-Fi</p>
+        </div>
+        <div>
+            <span class="block text-4xl mb-2 italic text-amber-500 font-playfair">11 AM</span>
+            <p class="uppercase text-xs tracking-widest opacity-60">Check-Out</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-24 px-4 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-1/2 space-y-6">
+            <h2 class="text-4xl font-bold">The Location</h2>
+            <p class="text-gray-600">Deep in the outskirts of the Town, El Classico is reachable via a private mountain road. We offer a complimentary shuttle from the regional airport.</p>
+            <div class="space-y-4 font-semibold text-gray-800">
+                <p>📍 707 Alpine Ridge, Nature Valley</p>
+                <p>📞 +1 (800) CLASSICO</p>
+                <p>✉️ stay@elclassico.com</p>
+            </div>
+        </div>
+        <div class="md:w-1/2 w-full h-80 rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition duration-700 shadow-2xl">
+            <img src="img/gallery5.jpg" class="w-full h-full object-cover" alt="Map Area">
+        </div>
+    </div>
+</section>
+
+<footer class="bg-stone-950 text-white py-12 text-center border-t border-white/5">
+    <p class="text-2xl italic font-bold text-amber-500 mb-2">El Classico</p>
+    <p class="text-sm opacity-40">&copy; 2026 El Classico Lodge. All rights reserved.</p>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.onclick = (e) => { e.stopPropagation(); mobileMenu.classList.toggle('hidden'); };
+    window.onclick = () => { mobileMenu.classList.add('hidden'); };
+</script>
+</body>
+</html>
